@@ -72,7 +72,7 @@ abstract class BaseActivity : MvpAppCompatActivity(), NavigatorActivityView, Bas
 
     @SuppressWarnings("unchecked")
     protected fun <T : View> bindView(@IdRes id: Int): T {
-        return findViewById(id) as T
+        return findViewById(id)
     }
 
 

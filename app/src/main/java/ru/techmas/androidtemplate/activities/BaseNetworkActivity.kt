@@ -30,17 +30,20 @@ abstract class BaseNetworkActivity : BaseActivity(), NetworkView {
     }
 
     override fun showProgress(show: Boolean) {
-        if (show)
+        if (show) {
             showView(progressBar!!)
-        else
+        } else {
             hideView(progressBar!!)
+        }
     }
 
     override fun showData(show: Boolean) {
-        if (show)
+        if (show){
             showView(ltData!!)
-        else
+        }
+        else{
             hideView(ltData!!)
+        }
     }
 
     override fun showError(show: Boolean, text: String) {
