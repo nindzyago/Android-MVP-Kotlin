@@ -15,4 +15,69 @@
         <item name="colorAccent">@color/light_background</item>
     </style>
 
+    <style name="ItemFilter" parent="android:TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorTextNormal</item>
+        <item name="android:layout_marginLeft">@dimen/activity_big_margin</item>
+        <item name="android:layout_marginTop">@dimen/activity_middle_margin</item>
+        <item name="android:layout_marginBottom">@dimen/activity_middle_margin</item>
+    </style>
+
+    <style name="CircleWithNumber">
+        <item name="android:layout_width">@dimen/circle</item>
+        <item name="android:layout_height">@dimen/circle</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/background_circle_orange</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/light_background</item>
+    </style>
+
+    <style name="hashtag_background_gray" parent="android:TextAppearance.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/background_rounded_gray</item>
+        <item name="android:paddingLeft">@dimen/activity_small_margin</item>
+        <item name="android:paddingBottom">@dimen/activity_ultra_small_margin</item>
+        <item name="android:paddingTop">@dimen/activity_ultra_small_margin</item>
+        <item name="android:paddingRight">@dimen/activity_small_margin</item>
+        <item name="android:textColor">@color/light_background</item>
+    </style>
+
+    <style name="TextNormal" parent="android:TextAppearance.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorTextBold</item>
+        <item name="android:textSize">@dimen/text_normal</item>
+    </style>
+
+    <style name="ButtonBlue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:paddingLeft">@dimen/activity_middle_margin</item>
+        <item name="android:paddingRight">@dimen/activity_middle_margin</item>
+        <item name="android:textColor">@color/light_background</item>
+        <item name="android:background">@drawable/button_blue</item>
+    </style>
+
+    <style name="ButtonBorderGray">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:background">@drawable/button_border_gray</item>
+        <item name="android:paddingLeft">@dimen/activity_middle_margin</item>
+        <item name="android:paddingRight">@dimen/activity_middle_margin</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="ButtonAdd">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:background">@drawable/background_rounded_light_gray</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:paddingRight">@dimen/activity_middle_margin</item>
+        <item name="android:paddingLeft">@dimen/activity_small_margin</item>
+        <item name="android:drawablePadding">@dimen/activity_ultra_small_margin</item>
+        <item name="android:drawableLeft">@drawable/add</item>
+    </style>
+
 </resources>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_middle_margin"
+        android:layout_marginTop="@dimen/activity_middle_margin"
+        android:text="@string/task_type"
+        android:textColor="@color/color_separate_line" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_middle_margin"
+        android:layout_marginTop="@dimen/activity_middle_margin"
+        android:layout_marginBottom="@dimen/activity_middle_margin">
+
+        <Button
+            android:id="@+id/btnIncoming"
+            style="@style/ButtonBlue"
+            android:text="@string/incoming" />
+
+        <Button
+            android:id="@+id/btnOutgoing"
+            style="@style/ButtonBorderGray"
+            android:layout_marginLeft="@dimen/activity_small_margin"
+            android:text="@string/outgoing" />
+
+    </LinearLayout>
+
+    <include layout="@layout/separate_line" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_middle_margin"
+        android:layout_marginTop="@dimen/activity_middle_margin"
+        android:layout_marginBottom="@dimen/activity_middle_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/task_status"
+            android:textColor="@color/color_separate_line" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_middle_margin"
+            android:layout_marginBottom="@dimen/activity_small_margin">
+
+            <Button
+                android:id="@+id/btnOpened"
+                style="@style/ButtonBlue"
+                android:text="@string/opened" />
+
+            <Button
+                android:id="@+id/btnArchive"
+                style="@style/ButtonBorderGray"
+                android:layout_marginLeft="@dimen/activity_small_margin"
+                android:text="@string/archival" />
+
+            <Button
+                android:id="@+id/btnCopy"
+                style="@style/ButtonBorderGray"
+                android:layout_marginLeft="@dimen/activity_small_margin"
+                android:text="@string/copy" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnChecking"
+            style="@style/ButtonBorderGray"
+            android:text="@string/checking" />
+
+    </LinearLayout>
+
+    <include layout="@layout/separate_line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_middle_margin"
+        android:text="@string/people"
+        android:textColor="@color/color_separate_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_middle_margin"
+        android:layout_marginBottom="@dimen/activity_middle_margin">
+
+       <Button
+           android:id="@+id/btnAddPeople"
+           android:text="@string/add"
+           style="@style/ButtonAdd" />
+
+    </LinearLayout>
+
+    <include layout="@layout/separate_line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_middle_margin"
+        android:text="Тэги"
+        android:textColor="@color/color_separate_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_middle_margin"
+        android:layout_marginBottom="@dimen/activity_middle_margin">
+
+        <Button
+            android:id="@+id/btnTags"
+            android:text="@string/add"
+            style="@style/ButtonAdd" />
+
+    </LinearLayout>
+
+</LinearLayout>
