@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_small_margin"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/activity_big_margin"
+                android:layout_marginTop="@dimen/activity_middle_margin"
+                android:layout_marginBottom="@dimen/activity_middle_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@android:style/TextAppearance.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Сумма услуг в месяц:"
+                    android:textColor="@color/mgts_text_standard"
+                    android:textSize="@dimen/text_title_task" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvSum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-10dp"
+                        android:text="1499"
+                        android:textColor="@color/mgts_Primary"
+                        android:textSize="40sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-10dp"
+                        android:text="p"
+                        android:textColor="@color/mgts_Primary"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    style="@android:style/TextAppearance.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_small_margin"
+                    android:text="Технология подключения:"
+                    android:textColor="@color/mgts_text_standard"
+                    android:textSize="@dimen/text_title_task" />
+
+                <TextView
+                    android:id="@+id/tvTechnology"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:text="PON"
+                    android:textColor="@color/mgts_Primary"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_small_margin"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/activity_big_margin"
+                android:layout_marginTop="@dimen/activity_middle_margin"
+                android:layout_marginBottom="@dimen/activity_middle_margin"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvServices"
+                        style="@android:style/TextAppearance.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Подключенные услуги:"
+                        android:textColor="@color/mgts_text_standard" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_ultra_small_margin"
+                        android:layout_toRightOf="@+id/tvServices"
+                        android:text="495р/мес"
+                        android:textColor="@color/mgts_Primary" />
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/SpinnerService"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_big_margin"
+                    android:layout_marginBottom="@dimen/activity_big_margin"
+                    android:visibility="gone">
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-5dp"
+                            android:text="MVON"
+                            android:textColor="@color/mgts_Primary"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-5dp"
+                            android:text="139"
+                            android:textColor="@color/mgts_Primary"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/tvTariff"
+                            style="@android:style/TextAppearance.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Весенний плюс"
+                            android:textColor="@color/mgts_text_standard" />
+
+                        <TextView
+                            style="@android:style/TextAppearance.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="p./мес"
+                            android:textColor="@color/mgts_text_standard" />
+
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="@dimen/activity_big_margin">
+
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-5dp"
+                            android:text="Цифровое ТВ"
+                            android:textColor="@color/mgts_Primary"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-5dp"
+                            android:text="199"
+                            android:textColor="@color/mgts_Primary"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/tvTariffTV"
+                            style="@android:style/TextAppearance.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Стандарт+"
+                            android:textColor="@color/mgts_text_standard" />
+
+                        <TextView
+                            style="@android:style/TextAppearance.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="p./мес"
+                            android:textColor="@color/mgts_text_standard" />
+
+                    </TableRow>
+                </TableLayout>
+
+                <include layout="@layout/separate_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_big_margin">
+
+                    <TextView
+                        style="@android:style/TextAppearance.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Подключенное оборудование:"
+                        android:textColor="@color/mgts_text_standard" />
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/SpinnerEquipment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+
+                </RelativeLayout>
+
+                <TextView
+                    style="@android:style/TextAppearance.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_big_margin"
+                    android:text="Оборудование WI-FI"
+                    android:textColor="@color/mgts_text_standard"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@android:style/TextAppearance.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Тип оборудования"
+                    android:textColor="@color/mgts_text_standard" />
+
+                <TextView
+                    style="@android:style/TextAppearance.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_middle_margin"
+                    android:text="D-link DIR 825AC"
+                    android:textColor="@color/mgts_text_standard"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@android:style/TextAppearance.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Название оборудования"
+                    android:textColor="@color/mgts_text_standard" />
+
+                <TextView
+                    style="@android:style/TextAppearance.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_middle_margin"
+                    android:text="Аренда"
+                    android:textColor="@color/mgts_text_standard"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@android:style/TextAppearance.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Владелец оборудования"
+                    android:textColor="@color/mgts_text_standard" />
+
+                <TextView
+                    style="@android:style/TextAppearance.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_middle_margin"
+                    android:text="GPON 60 Мбит/с + моб. связь"
+                    android:textColor="@color/mgts_text_standard"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@android:style/TextAppearance.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Подключенный пакет"
+                    android:textColor="@color/mgts_text_standard" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_big_margin"
+                android:layout_marginTop="@dimen/activity_middle_margin"
+                android:layout_marginRight="@dimen/activity_big_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@android:style/TextAppearance.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Доступно для подключения"
+                    android:textColor="@color/mgts_text_standard"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_middle_margin"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@android:style/TextAppearance.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Мобильный телефон"
+                        android:textColor="@color/mgts_Primary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <Switch
+                        android:id="@+id/swPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_small_margin"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@android:style/TextAppearance.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Цифровое ТВ"
+                        android:textColor="@color/mgts_Primary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <Switch
+                        android:id="@+id/swTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_small_margin"
+                    android:layout_marginBottom="@dimen/activity_middle_margin"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@android:style/TextAppearance.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Интернет"
+                        android:textColor="@color/mgts_Primary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <Switch
+                        android:id="@+id/swInet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:checked="true" />
+                </RelativeLayout>
+
+                <include layout="@layout/separate_line" />
+
+                <TextView
+                    style="@android:style/TextAppearance.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_middle_margin"
+                    android:text="Новые услуги"
+                    android:textAllCaps="true"
+                    android:textColor="@color/mgts_Primary"
+                    android:textSize="16sp" />
+
+                <TextView
+                    style="@android:style/TextAppearance.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_middle_margin"
+                    android:text="Название услуги 1"
+                    android:textColor="@color/mgts_text_standard"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_middle_margin">
+
+                    <TextView
+                        style="@android:style/TextAppearance.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Тарифный план:"
+                        android:textColor="@color/mgts_text_standard" />
+
+                    <TextView
+                        style="@android:style/TextAppearance.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_very_small_margin"
+                        android:text="Не выбран"
+                        android:textColor="@color/mgts_Primary"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    style="@android:style/TextAppearance.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_small_margin"
+                    android:text="Название услуги 2"
+                    android:textColor="@color/mgts_text_standard"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_middle_margin">
+
+                    <TextView
+                        style="@android:style/TextAppearance.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Тарифный план:"
+                        android:textColor="@color/mgts_text_standard" />
+
+                    <TextView
+                        style="@android:style/TextAppearance.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_very_small_margin"
+                        android:text="Не выбран"
+                        android:textColor="@color/mgts_Primary"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="@dimen/activity_middle_margin"
+                    android:background="@color/mgts_button"
+                    android:paddingLeft="@dimen/activity_small_margin"
+                    android:paddingRight="@dimen/activity_small_margin"
+                    android:text="Выбрать тариф"
+                    android:textAllCaps="false"
+                    android:textColor="@color/light_background" />
+
+                <include layout="@layout/separate_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_small_margin"
+                    android:layout_marginBottom="@dimen/activity_middle_margin"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@android:style/TextAppearance.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Оборудование"
+                        android:textColor="@color/mgts_Primary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <Switch
+                        android:id="@+id/swEquipment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:checked="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/lnSave"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="@dimen/activity_small_margin"
+            android:background="@color/mgts_Primary"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Сохранить"
+                android:textColor="@color/light_background" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_check"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
