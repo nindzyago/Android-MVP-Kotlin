@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ciAvatar"
+        android:layout_width="@dimen/avatar_big"
+        android:layout_height="@dimen/avatar_big"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ava"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivGroup"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@drawable/circle_group"
+        android:paddingRight="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ciAvatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_group" />
+
+    <TextView
+        android:id="@+id/tvText"
+        style="@style/TextNormalGray"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="Андрей Петров начал групповой звонок "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ciAvatar"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameGroup" />
+
+    <ImageView
+        android:id="@+id/ivLock"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNameGroup"
+        app:layout_constraintStart_toEndOf="@+id/ciAvatar"
+        app:layout_constraintTop_toTopOf="@+id/tvNameGroup"
+        app:srcCompat="@drawable/ic_lock" />
+
+    <TextView
+        android:id="@+id/tvNameGroup"
+        style="@style/TitleBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:text="Slack"
+        app:layout_constraintStart_toEndOf="@+id/ivLock"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivCall"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivLock"
+        app:layout_constraintStart_toEndOf="@+id/tvNameGroup"
+        app:layout_constraintTop_toTopOf="@+id/ivLock"
+        app:srcCompat="@drawable/ic_phone" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        style="@style/TextGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="3dp"
+        android:text="Только что"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/tvText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNameGroup"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/ivCheck"
+            android:layout_width="23dp"
+            android:layout_height="18dp"
+            app:srcCompat="@drawable/ic_check_blue"
+            tools:layout_editor_absoluteX="285dp"
+            tools:layout_editor_absoluteY="20dp" />
+
+        <TextView
+            android:id="@+id/tvData"
+            style="@style/TextGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08 янв"
+            app:layout_constraintBottom_toTopOf="@+id/tvText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/separate_line"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ciAvatar"
+        app:layout_constraintTop_toBottomOf="@+id/ciAvatar" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ciAvatar"
+        app:layout_constraintEnd_toEndOf="@+id/ciAvatar"
+        app:srcCompat="@drawable/circle_green" />
+
+</android.support.constraint.ConstraintLayout>
