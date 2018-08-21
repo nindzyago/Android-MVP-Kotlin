@@ -26,6 +26,9 @@
     <dimen name="margin_middle">12dp</dimen>
     <dimen name="slim_height">1dp</dimen>
     <dimen name="active_call">10dp</dimen>
+    <dimen name="big_button_close">56dp</dimen>
+    <dimen name="padding_small">7dp</dimen>
+    <dimen name="padding_big">15dp</dimen>
 
 
 </resources>

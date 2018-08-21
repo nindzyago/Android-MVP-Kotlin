@@ -15,7 +15,7 @@ class MainActivity : BaseActivity(), MainView {
 
 
     companion object {
-        private val LAYOUT = R.layout.call_chat_group
+        private val LAYOUT = R.layout.new_chat
     }
 
     @InjectPresenter

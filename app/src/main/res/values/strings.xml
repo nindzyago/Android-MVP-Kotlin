@@ -31,4 +31,5 @@
     <string name="task_type">Тип задачи</string>
     <string name="task_status">Статус задачи</string>
     <string name="people">Люди</string>
+    <string name="private_chat">Личный чат</string>
 </resources>
