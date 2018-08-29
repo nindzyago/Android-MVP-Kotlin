@@ -32,4 +32,16 @@
     <string name="task_status">Статус задачи</string>
     <string name="people">Люди</string>
     <string name="private_chat">Личный чат</string>
+
+
+
+
+
+    <string name="developer">Разработчик</string>
+    <string name="name">Андрей Петров</string>
+    <string name="description">Описание</string>
+    <string name="members">Участники (4)</string>
+    <string name="all_members_in_group">Все участники команды видят и могут вступить в группу</string>
+    <string name="open">Открытая</string>
+    <string name="closed">Закрытая</string>
 </resources>
