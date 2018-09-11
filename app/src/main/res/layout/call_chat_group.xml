@@ -70,7 +70,7 @@
         app:layout_constraintStart_toEndOf="@+id/tvNameGroup"
         app:layout_constraintTop_toTopOf="@+id/ivLock"
         app:srcCompat="@drawable/ic_phone"
-        android:visibility="gone"/>
+        android:visibility="visible"/>
 
     <TextView
         android:id="@+id/tvStatus"
@@ -93,7 +93,7 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="@+id/tvNameGroup"
         app:layout_constraintEnd_toEndOf="parent"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <ImageView
             android:id="@+id/ivCheck"

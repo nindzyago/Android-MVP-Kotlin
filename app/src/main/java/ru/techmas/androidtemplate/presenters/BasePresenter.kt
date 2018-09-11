@@ -3,8 +3,6 @@ package ru.techmas.androidtemplate.presenters
 import com.arellomobile.mvp.MvpPresenter
 import com.arellomobile.mvp.MvpView
 
-import org.greenrobot.eventbus.EventBus
-
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 import ru.techmas.androidtemplate.api.RestApi
@@ -22,8 +20,6 @@ open class BasePresenter<View : MvpView> : MvpPresenter<View>() {
     open var tokenHelper: TokenHelper? = null
     //
     open val TAG = javaClass.simpleName
-
-
 
     private val compositeDisposable = CompositeDisposable()
 

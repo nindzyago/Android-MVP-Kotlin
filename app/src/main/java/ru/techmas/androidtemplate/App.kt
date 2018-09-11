@@ -8,7 +8,6 @@ import ru.techmas.androidtemplate.di.modules.RestModule
 import ru.techmas.androidtemplate.di.modules.UtilsModule
 import ru.techmas.androidtemplate.di.modules.ViewModule
 import ru.techmas.androidtemplate.utils.Injector
-import timber.log.Timber
 
 
 /**
@@ -22,9 +21,9 @@ class App : Application() {
     override fun onCreate() {
         super.onCreate()
         setupDagger2()
-        if (BuildConfig.DEBUG) {
-            Timber.plant(Timber.DebugTree())
-        }
+//        if (BuildConfig.DEBUG) {
+//            Timber.plant(Timber.DebugTree())
+//        }
     }
 
     private fun setupDagger2() {
