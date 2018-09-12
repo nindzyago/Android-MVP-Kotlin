@@ -46,6 +46,7 @@
             <Button
                 android:id="@+id/but_opened"
                 style="@style/ButtonGroup"
+                android:layout_marginTop="20dp"
                 android:text="@string/open"
                 app:layout_constraintEnd_toStartOf="@+id/but_closed"
                 app:layout_constraintHorizontal_chainStyle="spread"
@@ -58,12 +59,11 @@
                 android:text="@string/closed"
                 app:layout_constraintBaseline_toBaselineOf="@+id/but_opened"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/but_opened" />
 
             <TextView
                 style="@style/TextNormal.Gray"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="@dimen/margin_small"
                 android:text="@string/all_members_in_group"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/but_opened" />
@@ -75,8 +75,10 @@
     <TextView
         android:id="@+id/tv_member"
         style="@style/TextNormal.Gray.Bold"
-        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="15dp"
         android:text="@string/members" />
+
+    <include layout="@layout/separate_line"/>
 
 </LinearLayout>
