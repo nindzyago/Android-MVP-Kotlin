@@ -1,6 +1,6 @@
 package ru.antipiev.ktemplate.views.fragments
 
-import ru.antipiev.ktemplate.contracts.NetworkContract
+import ru.antipiev.ktemplate.contracts.base.NetworkContract
 
 abstract class BaseNetworkFragment : BaseFragment(), NetworkContract {
 

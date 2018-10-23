@@ -36,11 +36,14 @@ android {
     }
 }
 
-ext.versionRetrofit = '2.1.0'
-ext.versionOkHttp = '3.5.0'
-ext.versionMaterial = '26.0.1'
-ext.versionMoxy = '1.5.3'
-ext.versionDagger = '2.11'
+ext {
+    versionRetrofit = '2.1.0'
+    versionOkHttp = '3.5.0'
+    versionMaterial = '26.0.1'
+    versionMoxy = '1.5.3'
+    versionDagger = '2.11'
+    anko_version = '0.10.5'
+}
 
 dependencies {
 
@@ -49,8 +52,14 @@ dependencies {
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5'
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:0.19.3"
 
+    // anko
+    implementation "org.jetbrains.anko:anko-sdk25:$anko_version"
+    implementation "org.jetbrains.anko:anko-design:$anko_version"
+    implementation "org.jetbrains.anko:anko-sdk25-listeners:$anko_version"
+
     implementation "com.github.vicpinm:krealmextensions:2.2.0"
     implementation 'org.koin:koin-android:1.0.1'
+    implementation 'ru.terrakok.cicerone:cicerone:3.0.0'
 
     //moxy mvp
     implementation "com.arello-mobile:moxy:$versionMoxy"

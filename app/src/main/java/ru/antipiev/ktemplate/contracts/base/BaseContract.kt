@@ -1,4 +1,4 @@
-package ru.antipiev.ktemplate.contracts
+package ru.antipiev.ktemplate.contracts.base
 
 import com.arellomobile.mvp.MvpView
 import com.arellomobile.mvp.viewstate.strategy.SkipStrategy

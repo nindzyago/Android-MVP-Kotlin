@@ -1,19 +1,32 @@
 package ru.antipiev.ktemplate.di
 
 import org.koin.dsl.module.module
-import ru.antipiev.ktemplate.data.api.RestApi
+import ru.antipiev.ktemplate.data.Channels
+import ru.antipiev.ktemplate.api.RestApi
 import ru.antipiev.ktemplate.data.managers.SampleManager
+import ru.antipiev.ktemplate.presenters.AuthPresenter
 import ru.antipiev.ktemplate.presenters.MainActivityPresenter
+import ru.antipiev.ktemplate.views.activities.AuthActivity
 import ru.antipiev.ktemplate.views.activities.MainActivity
+import ru.terrakok.cicerone.Cicerone
 
-val singleModule = module {
+val singletons = module {
+    val cicerone = Cicerone.create()
     single { RestApi() }
-    single { SampleManager(get()) }
+    single { Channels() }
+    single { cicerone.router }
+    single { cicerone.navigatorHolder }
+    single { SampleManager(get(), get()) }
 }
 
-val logicModule = module {
+val views = module {
     factory { MainActivity() }
-    factory { MainActivityPresenter(get()) }
+    factory { AuthActivity() }
 }
 
-val appModules = listOf(singleModule, logicModule)
+val presenters = module {
+    factory { MainActivityPresenter(get(), get()) }
+    factory { AuthPresenter(get()) }
+}
+
+val appModules = listOf(singletons, views, presenters)

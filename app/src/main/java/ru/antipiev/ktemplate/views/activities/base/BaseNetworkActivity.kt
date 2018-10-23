@@ -1,6 +1,6 @@
-package ru.antipiev.ktemplate.views.activities
+package ru.antipiev.ktemplate.views.activities.base
 
-import ru.antipiev.ktemplate.contracts.NetworkContract
+import ru.antipiev.ktemplate.contracts.base.NetworkContract
 
 abstract class BaseNetworkActivity : BaseActivity(), NetworkContract {
 

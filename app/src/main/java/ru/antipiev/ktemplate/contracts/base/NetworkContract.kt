@@ -1,4 +1,4 @@
-package ru.antipiev.ktemplate.contracts
+package ru.antipiev.ktemplate.contracts.base
 
 interface NetworkContract : BaseContract {
     fun showProgress(show: Boolean)

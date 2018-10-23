@@ -7,7 +7,9 @@ import org.koin.android.ext.android.get
 
 import ru.antipiev.ktemplate.R
 import ru.antipiev.ktemplate.contracts.MainActivityContract
+import ru.antipiev.ktemplate.data.models.Item
 import ru.antipiev.ktemplate.presenters.MainActivityPresenter
+import ru.antipiev.ktemplate.views.activities.base.BaseActivity
 
 class MainActivity : BaseActivity(), MainActivityContract {
 
@@ -20,7 +22,7 @@ class MainActivity : BaseActivity(), MainActivityContract {
     override fun unbindUX() {
     }
 
-    override fun showItems(items: List<String>) {
+    override fun showItems(items: List<Item>) {
         tvHello.text = items.toString()
     }
 
@@ -31,10 +33,5 @@ class MainActivity : BaseActivity(), MainActivityContract {
 
     @ProvidePresenter
     internal fun provideMainActivityPresenter(): MainActivityPresenter = get()
-
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//    }
-
 
 }

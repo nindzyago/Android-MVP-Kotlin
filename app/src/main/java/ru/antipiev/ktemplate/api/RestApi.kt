@@ -1,4 +1,4 @@
-package ru.antipiev.ktemplate.data.api
+package ru.antipiev.ktemplate.api
 
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.experimental.CoroutineCallAdapterFactory
 
@@ -11,7 +11,7 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import ru.antipiev.ktemplate.Const
-import ru.antipiev.ktemplate.data.api.endpoints.Sample
+import ru.antipiev.ktemplate.api.endpoints.Sample
 
 
 const val NO_AUTHORIZED = 401
