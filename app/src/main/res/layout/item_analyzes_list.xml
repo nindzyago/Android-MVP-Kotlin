@@ -1,0 +1,65 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/standard_margin">
+
+    <TextView
+        android:id="@+id/tvNameSurvey"
+        style="@style/SubHeaderText.Blue"
+        android:layout_width="0dp"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:layout_marginRight="@dimen/super_big_margin"
+        android:text="@string/name_survey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnOrder"
+        style="@style/ButtonOrder"
+        android:layout_marginTop="@dimen/standard_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameSurvey" />
+
+    <ImageView
+        android:id="@+id/chevron"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/standard_margin"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="@dimen/standard_margin"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_chevron_right"
+        app:layout_constraintBottom_toBottomOf="@+id/btnOrder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvNameSurvey"
+        app:layout_constraintTop_toTopOf="@+id/tvNameSurvey" />
+
+    <View
+        style="@style/SeparateLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOrder" />
+
+    <TextView
+        android:id="@+id/tvPriceOld"
+        style="@style/SubHeaderText.Gray"
+        android:layout_marginStart="@dimen/standard_margin"
+        android:layout_marginLeft="@dimen/standard_margin"
+        android:text="@string/price_old"
+        app:layout_constraintBottom_toBottomOf="@+id/btnOrder"
+        app:layout_constraintStart_toEndOf="@+id/btnOrder"
+        app:layout_constraintTop_toTopOf="@+id/btnOrder" />
+
+    <TextView
+        android:id="@+id/tvPriceNew"
+        style="@style/SubHeaderText"
+        android:layout_marginStart="@dimen/standard_margin"
+        android:layout_marginLeft="@dimen/standard_margin"
+        android:text="@string/price_new"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPriceOld"
+        app:layout_constraintStart_toEndOf="@+id/tvPriceOld"
+        app:layout_constraintTop_toTopOf="@+id/tvPriceOld" />
+
+</android.support.constraint.ConstraintLayout>
