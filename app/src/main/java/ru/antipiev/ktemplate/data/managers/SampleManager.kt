@@ -1,12 +1,16 @@
 package ru.antipiev.ktemplate.data.managers
 
 import com.vicpin.krealmextensions.queryAll
-import kotlinx.coroutines.experimental.launch
-import kotlinx.coroutines.experimental.runBlocking
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
+import org.jetbrains.anko.custom.async
 import ru.antipiev.ktemplate.data.Channels
 import ru.antipiev.ktemplate.api.RestApi
 import ru.antipiev.ktemplate.data.models.Item
 import ru.antipiev.ktemplate.utils.extensions.store
+import kotlin.coroutines.CoroutineContext
 
 class SampleManager(private val restApi: RestApi,
                     private val channels: Channels) {

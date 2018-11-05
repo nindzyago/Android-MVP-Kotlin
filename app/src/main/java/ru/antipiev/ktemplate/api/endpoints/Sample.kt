@@ -1,6 +1,6 @@
 package ru.antipiev.ktemplate.api.endpoints
 
-import kotlinx.coroutines.experimental.Deferred
+import kotlinx.coroutines.Deferred
 import retrofit2.http.GET
 import retrofit2.http.PUT
 import retrofit2.http.Path

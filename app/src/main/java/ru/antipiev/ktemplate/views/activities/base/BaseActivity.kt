@@ -12,6 +12,7 @@ import ru.antipiev.ktemplate.Const
 import ru.antipiev.ktemplate.R
 import ru.antipiev.ktemplate.contracts.base.BaseLifeCycle
 import ru.antipiev.ktemplate.utils.KeyboardHelper
+import ru.antipiev.ktemplate.views.activities.AuthActivity
 import ru.antipiev.ktemplate.views.activities.MainActivity
 import ru.terrakok.cicerone.NavigatorHolder
 import ru.terrakok.cicerone.android.SupportAppNavigator
@@ -27,6 +28,7 @@ abstract class BaseActivity : MvpAppCompatActivity(), BaseLifeCycle {
     open val navigator = object : SupportAppNavigator(this, R.id.container) {
         override fun createActivityIntent(context: Context?, screenKey: String?, data: Any?)= when (screenKey) {
             Const.Screen.MAIN -> Intent(context, MainActivity::class.java)
+            Const.Screen.AUTH -> Intent(context, AuthActivity::class.java)
             else -> null
         }
         override fun createFragment(screenKey: String?, data: Any?) = null

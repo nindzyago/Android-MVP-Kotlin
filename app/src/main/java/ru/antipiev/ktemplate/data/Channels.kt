@@ -1,6 +1,6 @@
 package ru.antipiev.ktemplate.data
 
-import kotlinx.coroutines.experimental.channels.BroadcastChannel
+import kotlinx.coroutines.channels.BroadcastChannel
 import ru.antipiev.ktemplate.data.models.Item
 
 class Channels {

@@ -2,6 +2,7 @@ package ru.antipiev.ktemplate
 
 
 import android.app.Application
+import com.facebook.drawee.backends.pipeline.Fresco
 import io.realm.Realm
 import io.realm.RealmConfiguration
 import org.koin.android.ext.android.startKoin
@@ -11,6 +12,7 @@ import ru.antipiev.ktemplate.di.appModules
 class App : Application() {
     override fun onCreate() {
         super.onCreate()
+        Fresco.initialize(this);
         startKoin(this, appModules)
         setupRealm()
     }
