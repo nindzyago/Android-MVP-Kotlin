@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">KTemplate</string>
+    <string name="price_old">5260</string>
+    <string name="order">Заказать</string>
+    <string name="price_new">2630</string>
+    <string name="name_survey">ИППП-12 (комплекс анализов методом ПЦР на 12 половых инфекций)</string>
+    <string name="name_analysis">Комплексные обследования</string>
+    <string name="description_analysis">ИППП-12 (комплекс анализов методом ПЦР на 12 половых инфекций), ИППП-12 количественная оценка (комплекс анализов методом ПЦР на 12 половых инфекций…</string>
+    <string name="enters_complex">Входит в комплекс</string>
+    <string name="description">Описание</string>
+    <string name="composition">Состав</string>
+    <string name="transcript">Расшифровка</string>
+    <string name="why_in_Lab">Почему в Lab</string>
+    <string name="preparation">Подготовка к анализу</string>
+    <string name="dash">—</string>
+    <string name="synonyms">Синонимы</string>
 </resources>

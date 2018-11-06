@@ -15,4 +15,83 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="StandardText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/standardText</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">10sp</item>
+
+    </style>
+
+    <style name="StandardText.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="StandardText.Gray">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+    </style>
+
+    <style name="StandardText.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="SmallText" parent="StandardText">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="SmallText.Gray">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="HeaderText" parent="StandardText">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="SubHeaderText" parent="StandardText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:lineSpacingExtra">7sp</item>
+    </style>
+
+    <style name="SubHeaderText.Blue">
+        <item name="android:textColor">@color/colorPrimary</item>
+
+    </style>
+
+    <style name="SubHeaderText.Gray">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="SubHeaderText.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!--<style name="SubHeaderText.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>-->
+
+    <style name="ButtonOrder" parent="StandardText.White">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:background">@drawable/background_rounded_blue</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:text">@string/order</item>
+    </style>
+
+    <style name="ButtonOrderBig" parent="SubHeaderText.White">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:background">@drawable/background_rounded_blue</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:text">@string/order</item>
+    </style>
+
+    <style name="SeparateLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/slim_height</item>
+        <item name="android:background">#eeeeee</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
 </resources>

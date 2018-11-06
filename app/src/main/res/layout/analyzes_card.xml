@@ -1,0 +1,181 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/HeaderText"
+            android:layout_margin="@dimen/standard_margin"
+            android:text="25-OH Витамин Д" />
+
+        <TextView
+            style="@style/SmallText.Gray"
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:text="@string/synonyms" />
+
+        <TextView
+            android:id="@+id/tvSynonyms"
+            style="@style/SubHeaderText"
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:layout_marginRight="@dimen/standard_margin"
+            android:text="Кальцидиол, vitamin D, Calcidiol,  25-hydroxycholecalciferol" />
+
+        <TextView
+            style="@style/SmallText.Gray"
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:text="@string/enters_complex"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvEnters"
+            style="@style/SubHeaderText.Blue"
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:layout_marginRight="@dimen/standard_margin"
+            android:text="Обследование при дефиците витамина D  и кальция"
+            android:visibility="visible" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/standard_margin">
+
+            <Button
+                android:id="@+id/btnOrder"
+                style="@style/ButtonOrderBig" />
+
+            <TextView
+                android:id="@+id/tvPriceOld"
+                style="@style/SubHeaderText.Gray"
+                android:layout_marginStart="@dimen/standard_margin"
+                android:layout_marginLeft="@dimen/standard_margin"
+                android:text="@string/price_old" />
+
+            <TextView
+                android:id="@+id/tvPriceNew"
+                style="@style/SubHeaderText"
+                android:layout_marginStart="@dimen/standard_margin"
+                android:layout_marginLeft="@dimen/standard_margin"
+                android:text="@string/price_new" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/grayLight" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvDescription"
+                    style="@style/SubHeaderText"
+                    android:layout_weight="1"
+                    android:text="@string/description" />
+
+                <TextView
+                    android:id="@+id/tvComposition"
+                    style="@style/SubHeaderText.Blue"
+                    android:layout_marginLeft="@dimen/standard_margin"
+                    android:layout_weight="1"
+                    android:text="@string/composition"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvTranscript"
+                    style="@style/SubHeaderText.Blue"
+                    android:layout_marginLeft="@dimen/standard_margin"
+                    android:layout_weight="1"
+                    android:text="@string/transcript" />
+
+                <TextView
+                    android:id="@+id/tvWhy"
+                    style="@style/SubHeaderText.Blue"
+                    android:layout_marginLeft="@dimen/standard_margin"
+                    android:layout_weight="1"
+                    android:text="@string/why_in_Lab" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <include layout="@layout/separate_line" />
+
+        <TextView
+            style="@style/SubHeaderText"
+            android:layout_margin="@dimen/standard_margin"
+            android:layout_weight="1"
+            android:text="@string/preparation" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:layout_marginRight="@dimen/standard_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/StandardText"
+                android:text="@string/dash" />
+
+            <TextView
+                style="@style/StandardText"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:text="Кровь на исследования рекомендуется сдавать натощак, пить можно только воду." />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standard_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/StandardText"
+                android:text="@string/dash" />
+
+            <TextView
+                style="@style/StandardText"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:text="С момента последнего приёма пищи должно пройти не менее 8 часов." />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:layout_marginRight="@dimen/standard_margin"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/StandardText"
+                android:text="@string/dash" />
+
+            <TextView
+                style="@style/StandardText"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:text="Взятие крови на исследование необходимо проводить до начала приема лекарственных  препаратов (если это возможно) или не ранее чем через 1-2 недели после их отмены.  При невозможности отмены лекарственных препаратов в направлении на исследование должно быть указано какие лекарственные препараты получает больной и в каких дозах." />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
