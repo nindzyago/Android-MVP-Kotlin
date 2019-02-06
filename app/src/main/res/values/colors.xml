@@ -1,5 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="gray">#ebebeb</color>
+    <color name="red">#e94f4f</color>
+
+    <color name="translucent_scrim_top">#26000000</color>
+    <color name="translucent_scrim_top_center">#0C000000</color>
+    <color name="translucent_scrim_bottom">#2A000000</color>
+    <color name="translucent_scrim_bottom_center">#0D000000</color>
+
+
+    <color name="background">#E0D3D3</color>
+    <color name="menu_team_back">#FAFAFA</color>
+    <color name="total_white">#FFFFFF</color>
+
+    <color name="slow_white">#2fffffff</color>
+
+    <color name="header_black">#333333</color>
+
+    <color name="icon_tint">#aa4692c3</color>
+    <color name="button_back">#85889A</color>
+
+    <color name="primary">#4e5361</color>
+    <color name="primary_light">#E0D3D3</color>
+    <color name="primary_lighter">#747474</color>
+    <color name="primary_dark">#596168</color>
+    <color name="accent">#FFFFFF</color>
+    <color name="accent_trans">#ccFFFFFF</color>
+    <color name="test_color">#f33</color>
+
+    <color name="accent_unenabled">#bfbfbf</color>
+
+    <color name="grey">#878787</color>
+    <color name="light_grey">#bfbfbf</color>
+    <color name="lightest_grey">#cccccc</color>
+    <color name="dark_grey">#585b64</color>
+    <color name="dark_grey_trans">#11000000</color>
+
+    <color name="black">#000000</color>
+
+    <color name="select">#4692c3</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="primary_tutorial">#ff3980a8</color>
+
+    <color name="light">#ececec</color>
+    <color name="divider">#d9d9d9</color>
+    <color name="light_text">#9a9a9a</color>
+
+
+    <color name="white60">#a0ffffff</color>
+    <color name="white_two">#efefef</color>
+    <color name="white_four">#e0e0e0</color>
+    <color name="white_five">#dadada</color>
+    <color name="transparent">#00000000</color>
+    <color name="dark_grey_two">#191a1b</color>
+    <color name="warm_grey">#7f7f7f</color>
+    <color name="warm_grey_two">#9c9c9c</color>
+    <color name="warm_grey_three">#8b8b8b</color>
+    <color name="warm_grey_four">#979797</color>
+    <color name="cornflower_blue_two">#4f62d7</color>
+    <color name="cornflower_blue_two_24">#3d4f62d7</color>
+    <color name="cornflower_blue_two_dark">#475bd4</color>
+    <color name="cornflower_blue_light_40">#64bec5f7</color>
+
+    <!--ActionBar-->
+    <color name="grad_left">#e66a62</color>
+    <color name="grad_right">#fb844a</color>
+    <!--<color name="grad_left">#4e5361</color>-->
+    <!--<color name="grad_right">#4e5361</color>-->
+
+    <color name="grey_tint">#aa999FAB</color>
+
+    <!--Bottom menu-->
+    <color name="bottom_tint_button">#999FAB</color>
+    <color name="bottom_tint_button_pressed">#5E98E7</color>
+
+    <!--Buttons-->
+    <color name="blue_light">#5E98E7</color>
+    <color name="green_light">#47B3C3</color>
+
+    <!--Profile Details-->
+    <color name="profile_icon_color">#878787</color>
+
+    <!--Sectioned RecyclerView-->
+    <color name="orange">#FB6565</color>
+    <color name="orange_light">#FB8B4B</color>
+    <color name="orange_transparent">#AAFB6565</color>
+    <color name="black_transparent_light">#44000000</color>
+
+    <color name="new_gray2">#999FAB</color>
+    <color name="new_gray3">#999FAB</color>
+    <color name="transparent_black">#1F000000</color>
+
+
     <color name="colorPrimary">#FE6B56</color>
     <color name="colorPrimaryDark">#FE6B56</color>
     <color name="colorAccent">#5F98E7</color>
@@ -7,15 +100,27 @@
     <color name="yellow">#FC944C</color>
 
 
-    <color name="colorTextNormal">#5F626C</color>
+    <color name="colorTextNormal">#707070</color>
     <color name="colorTextBold">#333333</color>
 
-
     <color name="light_background">#FAFAFA</color>
-    <color name="color_separate_line">#999999</color>
+    <color name="color_separate_line">#bbbbbb</color>
     <color name="light_gray">#0a050505</color>
-    <color name="gray">#999FAB</color>
     <color name="error_color">#F44336</color>
-    <color name="black">#000000</color>
+
+    <!-- New design colors-->
+    <color name="new_grey">#999999</color>
+    <color name="contactHeader">#333333</color>
+    <color name="contactRole">#999999</color>
+
+    <color name="icon_gray">#5E616B</color>
+
+
+
+    <color name="colorTextGray">#9AA0AB</color>
+    <color name="colorTextNormalGray">#85889A</color>
+    <color name="color_green">#35CC5E</color>
+    <color name="overlay">#55000000</color>
+
 
 </resources>

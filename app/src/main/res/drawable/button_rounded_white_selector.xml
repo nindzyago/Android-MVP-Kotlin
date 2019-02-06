@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:drawable="@drawable/button_white_rounded_touched" android:state_selected="true" />
+    <item android:drawable="@drawable/button_white_rounded_touched" android:state_pressed="true" />
+    <item android:drawable="@drawable/button_white_rounded_touched" android:state_focused="true" />
+
+    <item android:drawable="@drawable/button_white_rounded" />
+
+    <!--&lt;!&ndash; When selected &ndash;&gt;-->
+    <!--<item android:state_pressed="true" android:drawable="@drawable/menu_home_white"/>-->
+    <!--<item android:state_activated="true" android:drawable="@drawable/menu_home_white"/>-->
+    <!--<item android:state_selected="true" android:drawable="@drawable/menu_home_white"/>-->
+    <!--<item android:state_focused="true" android:drawable="@drawable/menu_home_white"/>-->
+
+
+</selector>
