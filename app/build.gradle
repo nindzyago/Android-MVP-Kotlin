@@ -14,6 +14,7 @@ android {
         versionCode 1
         versionName "0.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
         debug {
@@ -50,7 +51,10 @@ dependencies {
 
     // moxy mvp
     implementation "com.arello-mobile:moxy:$versionMoxy"
-    kapt  "com.arello-mobile:moxy-compiler:$versionMoxy"
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:support-vector-drawable:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    kapt "com.arello-mobile:moxy-compiler:$versionMoxy"
     implementation "com.arello-mobile:moxy-app-compat:$versionMoxy"
     implementation "com.arello-mobile:moxy-android:$versionMoxy"
 

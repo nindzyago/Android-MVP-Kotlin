@@ -1,5 +1,6 @@
 package ru.antipiev.ktemplate.presenters
 
+import android.view.MenuItem
 import com.arellomobile.mvp.InjectViewState
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -21,8 +22,6 @@ import kotlin.coroutines.CoroutineContext
 class MainActivityPresenter(private val sampleManager: SampleManager,
                             private val router: Router,
                             private val channels: Channels) : BasePresenter<MainActivityContract>(), CoroutineScope {
-    override val coroutineContext: CoroutineContext
-        get() = Dispatchers.Main
 
     init {
         getItems()
@@ -35,6 +34,13 @@ class MainActivityPresenter(private val sampleManager: SampleManager,
 
     fun itemClick(item: Item) {
         router.navigateTo(Const.Screen.AUTH)
+    }
+
+    fun onNavigationItemSelected(item: MenuItem) : Boolean{
+        when (item.itemId) {
+
+        }
+        return true
     }
 
 }

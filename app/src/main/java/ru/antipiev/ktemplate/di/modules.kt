@@ -25,7 +25,7 @@ val views = module {
 }
 
 val presenters = module {
-    factory { MainActivityPresenter(get(), get()) }
+    factory { MainActivityPresenter(get(), get(), get()) }
     factory { AuthPresenter(get()) }
 }
 
