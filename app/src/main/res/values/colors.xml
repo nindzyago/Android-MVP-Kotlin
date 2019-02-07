@@ -39,7 +39,6 @@
     <color name="black">#000000</color>
 
     <color name="select">#4692c3</color>
-    <color name="white">#FFFFFF</color>
 
     <color name="primary_tutorial">#ff3980a8</color>
 
@@ -121,6 +120,17 @@
     <color name="colorTextNormalGray">#85889A</color>
     <color name="color_green">#35CC5E</color>
     <color name="overlay">#55000000</color>
+
+    <!-- ____________________________Новые________________________________________      -->
+
+    <color name="newPrimary">#FA6962</color>
+    <color name="newPrimaryDark">#FA6962</color>
+    <color name="newAccent">#5F98E7</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="colorText">#333333</color>
+
 
 
 </resources>

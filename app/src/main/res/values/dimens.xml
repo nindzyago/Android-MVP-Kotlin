@@ -148,4 +148,17 @@
     <dimen name="icon_check_height">18dp</dimen>
     <dimen name="info_size">20dp</dimen>
 
+
+
+
+    <dimen name="standard_margin">16dp</dimen>
+    <dimen name="new_big_margin">22dp</dimen>
+    <dimen name="new_very_big_margin">50dp</dimen>
+    <dimen name="super_big_margin">70dp</dimen>
+
+
+
+
+
+
 </resources>

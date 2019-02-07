@@ -31,4 +31,20 @@
     <string name="task_type">Тип задачи</string>
     <string name="task_status">Статус задачи</string>
     <string name="people">Люди</string>
+
+
+
+    <string name="text_intro1">Умный мессенджер, \nкоторый помогает решать \nзадачи!</string>
+    <string name="start_using">Начать пользоваться</string>
+    <string name="text_intro2">команды для работы и личных \nпроектов, приглашайте других \nучастников</string>
+    <string name="create">Создавайте</string>
+    <string name="text_intro3">между вашими командами и \nбудте в центре событий</string>
+    <string name="tv_switch">Переключайтесь</string>
+    <string name="communicate">Общайтесь</string>
+    <string name="text_intro4">с участниками команды в \nличных и групповых чатах </string>
+    <string name="highlight">Выделяйте</string>
+    <string name="text_intro5">важное в переписке: \nпревращайте любые сообщения \nв задачи</string>
+    <string name="assign">Назначайте</string>
+    <string name="text_intro6">задачи себе и другим \nучастникам, отслеживайте \nстатус их выполнения</string>
+
 </resources>
