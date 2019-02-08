@@ -35,7 +35,7 @@
         android:layout_height="10dp"
         android:layout_above="@+id/btn_begin"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/new_big_margin"
+        android:layout_marginBottom="@dimen/new_medium_margin"
         android:src="@drawable/points" />
 
     <Button

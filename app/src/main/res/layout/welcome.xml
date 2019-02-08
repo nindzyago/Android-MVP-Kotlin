@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/NewSubHeaderText.Medium"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:layout_marginBottom="@dimen/new_small_margin"
+        android:text="@string/welcome" />
+
+    <TextView
+        style="@style/NewSmallText.Gray"
+        android:layout_marginBottom="@dimen/new_big_margin"
+        android:text="@string/let_create_team"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+        
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/pic_first"
+            android:layout_marginTop="-20dp" />
+        <EditText
+            android:id="@+id/et_number"
+            style="@style/NewSubHeaderText"
+            android:layout_marginBottom="@dimen/new_big_margin"
+            android:background="@android:color/transparent"
+            android:maxLines="1"
+            android:hint="@string/team_name"
+            android:gravity="center_horizontal"
+            android:textColorHint="@color/line_gray" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_resend_code"
+        style="@style/NewSmallText.Blue"
+        android:layout_margin="@dimen/new_very_big_margin"
+        android:text="@string/invite_partner"
+        android:textAllCaps="true" />
+
+</LinearLayout>

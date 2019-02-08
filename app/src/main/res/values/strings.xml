@@ -47,5 +47,15 @@
     <string name="assign">Назначайте</string>
     <string name="text_intro6">задачи себе и другим \nучастникам, отслеживайте \nстатус их выполнения</string>
     <string name="phone_message">Телефон нам нужен для того, чтобы обезопасить \nваш аккаунт и держать вас в курсе событий</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="enter_phone_number">Введите ваш номер телефона</string>
+    <string name="get_code">Получить код</string>
+    <string name="enter_code">Введите код подтверждения</string>
+    <string name="code_message">На номер +7 937 478-87-98 был выслан \nкод подтверждения</string>
+    <string name="resend_code">Выслать код повторно</string>
+    <string name="welcome">Добро пожаловать!</string>
+    <string name="let_create_team">Давайте создадим Вашу первую \nкоманду для совместной работы:</string>
+    <string name="team_name">Название команды</string>
+    <string name="invite_partner">Пригласить участников</string>
 
 </resources>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_gray"
@@ -10,7 +9,7 @@
     <TextView
         style="@style/NewSubHeaderText"
         android:layout_margin="@dimen/standard_margin"
-        android:text="Введите ваш номер телефона" />
+        android:text="@string/enter_phone_number" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,8 +18,9 @@
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/tv_phone_code"
             style="@style/NewSubHeaderText"
-            android:layout_marginLeft="44dp"
+            android:layout_marginLeft="@dimen/super_big_margin"
             android:layout_marginTop="@dimen/standard_margin"
             android:layout_marginRight="@dimen/standard_margin"
             android:text="+7" />
@@ -32,10 +32,13 @@
             android:background="@color/line_gray" />
 
         <EditText
+            android:id="@+id/et_number"
             style="@style/NewSubHeaderText"
             android:layout_margin="@dimen/standard_margin"
             android:background="@android:color/transparent"
-            android:hint="Номер телефона"
+            android:maxLines="1"
+            android:inputType="phone"
+            android:hint="@string/phone_number"
             android:gravity="center_horizontal"
             android:textColorHint="@color/line_gray" />
 
@@ -54,12 +57,13 @@
         android:background="@color/white">
 
         <TextView
+            android:id="@+id/tv_country"
             style="@style/StandardText"
             android:layout_margin="@dimen/standard_margin"
-            android:layout_marginLeft="44dp"
             android:text="Россия" />
 
         <ImageView
+            android:id="@+id/chevron"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
@@ -81,8 +85,5 @@
         android:layout_height="40dp"
         android:layout_margin="@dimen/standard_margin"
         android:background="@drawable/button_blue_rounded25"
-        android:text="Получить код" />
-
-
-
+        android:text="@string/get_code" />
 </LinearLayout>
