@@ -130,9 +130,6 @@
     <dimen name="negative_half_avatar">-8dp</dimen>
 
 
-
-
-
     <dimen name="avatar_big">60dp</dimen>
     <dimen name="text_title_call">17sp</dimen>
     <dimen name="text_call_status">13sp</dimen>
@@ -149,12 +146,14 @@
     <dimen name="info_size">20dp</dimen>
 
 
-
+    <!-- ____________________________Новые________________________________________      -->
 
     <dimen name="standard_margin">16dp</dimen>
     <dimen name="new_big_margin">22dp</dimen>
     <dimen name="new_very_big_margin">50dp</dimen>
     <dimen name="super_big_margin">70dp</dimen>
+    <dimen name="new_small_margin">8dp</dimen>
+
 
 
 

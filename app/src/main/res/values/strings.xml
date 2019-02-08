@@ -46,5 +46,6 @@
     <string name="text_intro5">важное в переписке: \nпревращайте любые сообщения \nв задачи</string>
     <string name="assign">Назначайте</string>
     <string name="text_intro6">задачи себе и другим \nучастникам, отслеживайте \nстатус их выполнения</string>
+    <string name="phone_message">Телефон нам нужен для того, чтобы обезопасить \nваш аккаунт и держать вас в курсе событий</string>
 
 </resources>

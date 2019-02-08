@@ -711,10 +711,25 @@
     </style>
     <style name="StandardText.Blue">
         <item name="android:textColor">@color/newAccent</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="NewSmallText" parent="StandardText">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="NewSmallText.Gray">
+        <item name="android:textColor">@color/text_gray</item>
+    </style>
+
+    <style name="NewSmallText.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="NewSubHeaderText" parent="StandardText">
+        <item name="android:textSize">19sp</item>
     </style>
 
     <style name="NewHeaderText" parent="StandardText">
-        <item name="android:textColor">@color/colorText</item>
         <item name="android:textSize">22sp</item>
     </style>
 

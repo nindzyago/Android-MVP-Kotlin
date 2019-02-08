@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/NewSubHeaderText"
+        android:layout_margin="@dimen/standard_margin"
+        android:text="Введите ваш номер телефона" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/NewSubHeaderText"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginRight="@dimen/standard_margin"
+            android:text="+7" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:background="@color/line_gray" />
+
+        <EditText
+            style="@style/NewSubHeaderText"
+            android:layout_margin="@dimen/standard_margin"
+            android:background="@android:color/transparent"
+            android:hint="Номер телефона"
+            android:gravity="center_horizontal"
+            android:textColorHint="@color/line_gray" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/standard_margin"
+        android:layout_marginRight="@dimen/standard_margin"
+        android:background="@color/line_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/StandardText"
+            android:layout_margin="@dimen/standard_margin"
+            android:layout_marginLeft="44dp"
+            android:text="Россия" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/standard_margin"
+            android:src="@drawable/ic_chevron_right" />
+
+    </RelativeLayout>
+
+    <TextView
+        style="@style/NewSmallText.Gray"
+        android:layout_margin="@dimen/new_small_margin"
+        android:textAlignment="center"
+        android:text="@string/phone_message" />
+
+    <Button
+        android:id="@+id/btn_get"
+        style="@style/NewSmallText.White"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/standard_margin"
+        android:background="@drawable/button_blue_rounded25"
+        android:text="Получить код" />
+
+
+
+</LinearLayout>

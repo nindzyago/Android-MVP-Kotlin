@@ -3,8 +3,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/main_gradient"
-    android:orientation="vertical">
+    android:background="@drawable/main_gradient">
 
     <View
         android:layout_width="wrap_content"
@@ -46,7 +45,7 @@
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/standard_margin"
         android:background="@drawable/button_white_rounded25"
         android:text="@string/start_using" />
 
